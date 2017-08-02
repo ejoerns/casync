@@ -142,7 +142,7 @@ int main(int argc, char *argv[]) {
                         goto inner_fail;
                 }
 
-                execv(argv[1], argv + 1);
+                execvp(argv[1], argv + 1);
                 r = -errno;
                 log_error("Failed to execute child process: %m");
 
