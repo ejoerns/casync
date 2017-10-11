@@ -10,7 +10,8 @@
 
 #include "util.h"
 
-#define TIMEOUT_NSEC UINT64_C(30000000000)
+/* We timeout after 5 min */
+#define TIMEOUT_NSEC UINT64_C(300000000000)
 
 static sig_atomic_t quit = false;
 
